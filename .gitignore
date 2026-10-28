@@ -1,0 +1,28 @@
+# 构建产物（前端外壳由 vite 生成，编译期嵌入 exe）
+build/
+dist/
+frontend/
+
+# 依赖与 IDE
+web/node_modules/
+web/dist/
+.vs/
+*.user
+*.suo
+
+# 本地预览截图与临时文件
+web/.local/
+
+# 大体积词库媒体（插画 / 缩略图 / 英美发音，约 620MB）：不入库，本地保留即可
+# 需要恢复时从原 word-atlas 项目拷回 web/public/atlas
+web/public/atlas/
+
+# C/C++ 编译中间产物
+*.obj
+*.pch
+*.lib
+*.dll
+*.exe
+*.pdb
+*.ilk
+*.exp
