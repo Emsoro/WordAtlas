@@ -10,6 +10,17 @@
 技术底座沿用 [maze](../maze) 项目的 **TauriCPP**（C++17 + Win32 + WebView2），
 只做了三处必要增强：外置数据目录、Range 分段响应、窗口图标 / 外链处理。
 
+## 下载
+
+词库媒体包 **`atlas.zip`**（7,000+ 词的插画、缩略图、英美发音，约 620 MB）体积太大不进仓库，单独下载：
+
+> 夸克网盘分享「atlas.zip」，点击链接或复制整段内容，打开「夸克APP」即可获取。
+> 链接：https://pan.quark.cn/s/45bfbd0b5729?pwd=gRDv
+> 提取码：gRDv
+> 分享口令：`/~e9ba3brRiQ~/`
+
+解压后把目录放到 exe 同级（`dist\WordAtlas\atlas`）即可运行；要自己构建的话放到 `web\public\atlas`。
+
 ## 目录结构
 
 ```
@@ -91,14 +102,7 @@ npm run preview:check      # Playwright 自动检查：渲染、资源、Range �
 robocopy D:\Cplusplus\word-atlas\public\atlas D:\Cplusplus\WordAtlas\web\public\atlas /E
 ```
 
-**② 下载打包好的 `atlas.zip`（夸克网盘）**
-
-> 夸克网盘分享「atlas.zip」，点击链接或复制整段内容，打开「夸克APP」即可获取。
-> 链接：https://pan.quark.cn/s/45bfbd0b5729?pwd=gRDv
-> 提取码：gRDv
-> 分享口令：`/~e9ba3brRiQ~/`
-
-解压后把目录放到 exe 同级（即 `dist\WordAtlas\atlas`）即可，不必重新构建。
+**② 直接下载 `atlas.zip`**：见开头「下载」一节（解压到 `dist\WordAtlas\atlas` 或 `web\public\atlas`）。
 
 没有媒体时程序照样能启动，只是插画和发音缺失（构建与外壳验证不受影响）。
 
