@@ -82,12 +82,23 @@ npm run preview:check      # Playwright 自动检查：渲染、资源、Range �
 
 ## 媒体文件不入库
 
-`web/public/atlas`（插画、缩略图、英美发音，约 620 MB / 37,575 个文件）不提交到 git：
-克隆后从原 word-atlas 项目拷贝一次即可：
+`web/public/atlas`（插画、缩略图、英美发音，约 620 MB / 37,575 个文件）不提交到 git。
+克隆后按下面任一种方式补齐：
+
+**① 从原 word-atlas 项目拷贝**
 
 ```powershell
 robocopy D:\Cplusplus\word-atlas\public\atlas D:\Cplusplus\WordAtlas\web\public\atlas /E
 ```
+
+**② 下载打包好的 `atlas.zip`（夸克网盘）**
+
+> 夸克网盘分享「atlas.zip」，点击链接或复制整段内容，打开「夸克APP」即可获取。
+> 链接：https://pan.quark.cn/s/45bfbd0b5729?pwd=gRDv
+> 提取码：gRDv
+> 分享口令：`/~e9ba3brRiQ~/`
+
+解压后把目录放到 exe 同级（即 `dist\WordAtlas\atlas`）即可，不必重新构建。
 
 没有媒体时程序照样能启动，只是插画和发音缺失（构建与外壳验证不受影响）。
 

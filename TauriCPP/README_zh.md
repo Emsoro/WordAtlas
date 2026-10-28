@@ -1,12 +1,5 @@
 # TauriCPP
 
-夸克网盘给你分享了「atlas.zip」，点击链接或复制整段内容，打开「夸克APP」即可获取。
-/~e9ba3brRiQ~:/
-链接：https://pan.quark.cn/s/45bfbd0b5729?pwd=gRDv
-提取码：gRDv
-
-下载后解压目录放在exe同级即可
-
 基于 WebView2 的轻量级 C++ 桌面应用框架，灵感来自 [Tauri](https://tauri.app)。使用 Web 前端 + C++ 后端构建现代桌面应用——单文件部署，源码不泄露。
 
 ## 特性
